@@ -17,31 +17,31 @@ const listAccordion: IListAccordion[] = [
   {
     value: "tech",
     content:
-      "I mainly work with HTML, CSS, JavaScript, and frameworks like React, Next.js, and Vue. I also have experience using Tailwind CSS, TypeScript, and working with APIs.",
+      "I built my foundation in HTML, CSS, and JavaScript, and I’ve spent the last few months focusing heavily on React and Next.js. I use Tailwind CSS for styling and TypeScript to write cleaner code. I'm also familiar with fetching data from APIs and managing basic application states.",
     trigger: "What technologies do you work with?",
   },
   {
     value: "working-arangement",
     content:
-      "I mainly work with HTML, CSS, JavaScript, and frameworks like React, Next.js, and Vue. I also have experience using Tailwind CSS, TypeScript, and working with APIs.",
+      "I am very open to remote work. During my bootcamp, I learned how to collaborate digitally using Git and GitHub for version control. I’m disciplined with my schedule and comfortable using tools like Slack to stay connected and report my daily progress to the team.",
     trigger: "Do you work on freelance or remote projects?",
   },
   {
     value: "figma",
     content:
-      "I mainly work with HTML, CSS, JavaScript, and frameworks like React, Next.js, and Vue. I also have experience using Tailwind CSS, TypeScript, and working with APIs.",
+      "Absolutely. I take great pride in my ability to deliver pixel-perfect implementations. I have a very keen eye for detail, ensuring that every margin, font size, and color transition in the Figma file is translated accurately into the final code. I make sure the result is not only visually identical but also fully responsive across all devices.",
     trigger: "Can you convert Figma or Sketch designs into code?",
   },
   {
     value: "team",
     content:
-      "I mainly work with HTML, CSS, JavaScript, and frameworks like React, Next.js, and Vue. I also have experience using Tailwind CSS, TypeScript, and working with APIs.",
+      "Yes, I am comfortable working with teams and familiar with integrating REST APIs. I use TanStack Query to handle data fetching, caching, and synchronization efficiently. I understand the importance of clear communication with backend developers to ensure the data is handled correctly on the front end.",
     trigger: "Do you collaborate with backend developers or teams?",
   },
   {
     value: "time",
     content:
-      "I mainly work with HTML, CSS, JavaScript, and frameworks like React, Next.js, and Vue. I also have experience using Tailwind CSS, TypeScript, and working with APIs.",
+      "Yes, I am looking for a full-time, remote position. As a junior developer, I am looking for a team where I can contribute my skills, continue to learn best practices, and grow professionally within a remote-first environment.",
     trigger: "Are you available for full-time roles?",
   },
 ];
