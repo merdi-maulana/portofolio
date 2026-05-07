@@ -33,7 +33,7 @@ export default function Footer() {
         <div>
           {/* Copyright */}
           <p className="text-white text-xs">
-            © 2025 Edwin Anderson. All rights reserved.
+            © 2026 Merdi Maulana Agustian. All rights reserved.
           </p>
         </div>
       </div>

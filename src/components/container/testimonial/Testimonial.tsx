@@ -15,28 +15,31 @@ import { HiOutlineArrowRight, HiOutlineArrowLeft } from "react-icons/hi2";
 
 const ListTech = [
   {
+    id:1,
     name: "Sarah Tan",
     icon: testimoniicon,
     Quote:
-      "“Working with Edwin Anderson was a smooth experience from start to finish. He translated our design into clean, responsive code and even suggested improvements we hadn’t thought of. Highly recommended!”",
+      "“Working with Merdi was a smooth experience from start to finish. He translated our design into clean, responsive code and even suggested improvements we hadn’t thought of. Highly recommended!”",
     Position: "Product Manager",
     Company: "Finovate",
     Rating: 5,
   },
   {
+    id:2,
     name: "Sarah Tan",
     icon: testimoniicon,
     Quote:
-      "“Working with Edwin Anderson was a smooth experience from start to finish. He translated our design into clean, responsive code and even suggested improvements we hadn’t thought of. Highly recommended!”",
+      "“Working with Merdi was a smooth experience from start to finish. He translated our design into clean, responsive code and even suggested improvements we hadn’t thought of. Highly recommended!”",
     Position: "Product Manager",
     Company: "Finovate",
     Rating: 4,
   },
   {
+    id:3,
     name: "Sarah Tan",
     icon: testimoniicon,
     Quote:
-      "“Working with Edwin Anderson was a smooth experience from start to finish. He translated our design into clean, responsive code and even suggested improvements we hadn’t thought of. Highly recommended!”",
+      "“Working with Merdi was a smooth experience from start to finish. He translated our design into clean, responsive code and even suggested improvements we hadn’t thought of. Highly recommended!”",
     Position: "Product Manager",
     Company: "Finovate",
     Rating: 5,

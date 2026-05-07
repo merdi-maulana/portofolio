@@ -5,16 +5,19 @@ import portfolio1 from "@/assets/img/Portfolio1.png";
 import portfolio3 from "@/assets/img/Portfolio3.png";
 import { HiOutlineArrowRight, HiOutlineArrowLeft } from "react-icons/hi2";
 
-const listPortfolio: { title: string; image: StaticImageData }[] = [
+const listPortfolio: { id: number; title: string; image: StaticImageData }[] = [
   {
+    id:1,
     title: "Portfolio 1",
     image: portfolio1,
   },
   {
+    id:2,
     title: "Portfolio 2",
     image: portfolio2,
   },
   {
+    id:3,
     title: "Portfolio 3",
     image: portfolio3,
   },
@@ -51,21 +54,15 @@ export default function Portfolio() {
       <div className="flex flex-col md:flex-row gap-4">
         {listPortfolio.map((portfolio) => {
           return (
-            <div className="">
+            <div key={portfolio.id} className="">
               <div
-                key={portfolio.title}
                 className="p-4 bg-neutral-100 rounded-2xl"
               >
                 <div className="absolute mt-3 -ml-6 ">
                   <p className="bg-secondary z-20 rounded-r-2xl font-semibold w-25 tracking-tight p-1 text-xs">
                     Best Portofolio
                   </p>
-                  <div
-                    className="w-0 h-0 -mt-0.5 
-                      border-l-[8px] border-l-transparent
-                      border-r-[8px] border-r-transparent
-                      border-b-[8px] border-b-[#855400] rotate-45"
-                  ></div>
+                  <div className="w-0 h-0 -mt-0.5 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-b-[8px] border-b-[#855400] rotate-45"></div>
                 </div>
                 <Image alt={portfolio.title} src={portfolio.image} />
               </div>
