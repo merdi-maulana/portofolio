@@ -19,25 +19,35 @@ const ListTech = [
   {
     name: "HTML",
     icon: HTMLimg,
-    Description: "Crafting semantic, accessible HTML structures.",
+    Description: "Building semantic and accessible structures to ensure a solid foundation for SEO and screen-reader compatibility.",
   },
   {
-    name: "Css",
+    name: "CSS/Tailwind",
     icon: CSSimg,
     Description:
-      "Crafting semantic, accessible HTML structures.Crafting semantic, accessible HTML structures.",
+      "Crafting pixel-perfect, responsive layouts with a focus on design fidelity and maintainable styling using Tailwind CSS.",
   },
   {
     name: "JavaScript",
     icon: JSimg,
     Description:
-      "Crafting semantic, accessible HTML structures.Crafting semantic, accessible HTML structures.",
+      "Developing clean and efficient application logic using modern ES6+ features and asynchronous programming.",
   },
   {
     name: "React",
     icon: Reactimg,
     Description:
-      "Crafting semantic, accessible HTML structures.Crafting semantic, accessible HTML structures.",
+      "Architecting modular, component-based UIs with a focus on reusable code and efficient state management hooks.",
+  },{
+    name: "Next.js",
+    icon: Reactimg,
+    Description:
+      "Optimizing web performance through Server-Side Rendering (SSR) and Static Site Generation (SSG) for faster, SEO-friendly applications.",
+  },{
+    name: "Tanstack Query",
+    icon: Reactimg,
+    Description:
+      "Streamlining server-state management by implementing efficient data fetching, caching, and synchronization to enhance user experience.",
   },
 ];
 
@@ -73,14 +83,14 @@ export default function Technologies() {
         life.
       </p>
       <Carousel className="w-full flex justify-center" setApi={setApi}>
-        <CarouselContent className="-ml-1 md:max-w-[920px]">
+        <CarouselContent className="-ml-1 md:max-w-[920px] lg:max-w-[1200px]">
           {ListTech.map((tech, index) => (
             <CarouselItem key={index} className="basis-1/2 pl-1 md:basis-1/4">
-              <div className="p-1">
+              <div className="p-1 lg:mx-2">
                 <Card
                   className={`rounded-full ${index % 2 !== 0 ? "bg-white" : "bg-secondary"}`}
                 >
-                  <CardContent className="flex flex-col items-center justify-start px-4 py-10 text-center gap-3 h-70 md:h-75">
+                  <CardContent className="flex flex-col items-center justify-start px-4 py-10 text-center gap-3 h-70 md:h-75 lg:h-80">
                     <div
                       className={`h-15 w-15 p-3 justify-center items-center flex rounded-full ${index % 2 !== 0 ? "bg-[#F5F5F5]" : "bg-white"}`}
                     >
@@ -101,13 +111,13 @@ export default function Technologies() {
       </Carousel>
       <div className="flex justify-center gap-3">
         <button
-          className={`border border-neutral-300 h-12 w-12 p-3 rounded-full ${canScrollPrev ? "" : "text-neutral-400"}`}
+          className={`border border-neutral-300 h-12 w-12 p-3 rounded-full transition-colors duration-300 ${canScrollPrev ? "cursor-pointer hover:bg-white hover:text-primary" : "text-neutral-400"}`}
           onClick={() => api?.scrollPrev()}
         >
           <HiOutlineArrowLeft className="h-full w-full" />
         </button>
         <button
-          className={`border border-neutral-300 h-12 w-12 p-3 rounded-full ${canScrollNext ? "" : "text-neutral-400"}`}
+          className={`border border-neutral-300 h-12 w-12 p-3 rounded-full transition-colors duration-300 ${canScrollNext ? "cursor-pointer hover:bg-white hover:text-primary" : "text-neutral-400"}`}
           onClick={() => api?.scrollNext()}
         >
           <HiOutlineArrowRight className="h-full w-full" />

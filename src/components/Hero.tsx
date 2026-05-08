@@ -163,7 +163,7 @@ export function Hero() {
                   className="text-white font-bold md:text-xl max-w-xl leading-relaxed animate-in fade-in slide-in-from-bottom-4 duration-700"
                   style={{ animationDelay: "800ms", animationFillMode: "both" }}
                 >
-                  Hello, I'm Merdi
+                  Hello, I’m Merdi
                 </h2>
 
                 {/* Main title */}
@@ -193,31 +193,31 @@ export function Hero() {
                       2+
                     </p>
                     <p className="text-xs md:text-base text-white mt-1">
-                      Year of Experience
+                      Year Professional Consistency
                     </p>
                   </div>
                   <div className="flex flex-col mb-0 pl-10 md:pl-0 border-l md:border-none border-white/30">
                     <p className="text-[32px] md:text-5xl font-bold text-white ">
-                      99%
+                      1000+
                     </p>
                     <p className="text-xs md:text-base text-white mt-1">
-                      Client Satisfaction
+                      Hours of Intensive Coding
                     </p>
                   </div>
                   <div className="flex flex-col mb-0">
                     <p className="text-[32px] md:text-5xl font-bold text-white">
-                      3
+                      100%
                     </p>
                     <p className="text-xs md:text-base text-white mt-1">
-                      Project Delivered
+                      Pixel-Perfect UI Delivery
                     </p>
                   </div>
                   <div className="flex flex-col mb-0 pl-10 md:pl-0 border-l md:border-none border-white/30">
-                    <p className="text-[32px] md:text-5xl font-bold text-white">
-                      50
+                    <p className="text-[32px] md:text-4xl font-bold text-white">
+                      Certified
                     </p>
                     <p className="text-xs md:text-base text-white mt-1">
-                      Clients Worldwide
+                      Frontend Specialist
                     </p>
                   </div>
                   <div className="col-span-2 md:col-span-1">

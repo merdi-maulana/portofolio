@@ -30,7 +30,7 @@ export default function CardSuperiority({
           return (
             <div
               key={skill}
-              className={` flex gap-3 items-center justify-center mb-6 py-1`}
+              className={` flex gap-3 items-center hover:bg-primary-300/20 rounded-full justify-center mb-6 py-1`}
             >
               <Image alt="check" src={image} />
               <p className="font-semibold md:text-[18px]"> {skill} </p>

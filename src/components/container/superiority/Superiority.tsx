@@ -27,7 +27,7 @@ const listAnotherPower = [
 
 export default function Superiority() {
   return (
-    <main className="mt-12 px-3 md:px-40">
+    <main className="mt-12 px-3 md:px-40 flex justify-center flex-col">
       <div className="flex flex-col items-center mb-8">
         <div className="px-6">
           <h2 className="font-bold text-[28px] md:text-[40px] text-center">
@@ -39,7 +39,7 @@ export default function Superiority() {
         </div>
       </div>
 
-      <div className="md:flex gap-4">
+      <div className="flex gap-4 md:gap-10 md:px-20 lg:px-40">
         <CardSuperiority
           avatar={developer}
           list={listMyPower}
@@ -56,9 +56,14 @@ export default function Superiority() {
       </div>
 
       <div className="md:flex md:justify-center">
-        <Button className="h-12 mt-8 w-full bg-primary-200 rounded-full md:w-80">
-          <p className="text-lg">Hire Me</p>
-        </Button>
+        <a
+          href="#contact"
+          className="h-12 mt-8 flex justify-center items-center w-full bg-primary-200 hover:bg-primary-300 cursor-pointer border  rounded-full md:w-80"
+        >
+          <p className="text-lg transition-all ease-in-out duration-300  font-semibold text-black hover:text-white">
+            Hire Me
+          </p>
+        </a>
       </div>
     </main>
   );
