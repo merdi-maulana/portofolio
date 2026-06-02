@@ -58,7 +58,7 @@ export default function Superiority() {
       <div className="md:flex md:justify-center">
         <a
           href="#contact"
-          className="h-12 mt-8 flex justify-center items-center w-full bg-primary-200 hover:bg-primary-300 cursor-pointer border  rounded-full md:w-80"
+          className="h-12 mt-8 flex justify-center items-center w-full bg-primary-200 hover:bg-primary-300 transition-all ease-in-out duration-300 cursor-pointer border  rounded-full md:w-80"
         >
           <p className="text-lg transition-all ease-in-out duration-300  font-semibold text-black hover:text-white">
             Hire Me

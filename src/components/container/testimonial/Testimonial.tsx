@@ -129,13 +129,13 @@ export default function Testimonial() {
       </Carousel>
       <div className="flex justify-center gap-3 mt-5">
         <button
-          className={`border border-neutral-300 h-12 w-12 p-3 rounded-full ${canScrollPrev ? "" : "text-neutral-400"}`}
+          className={`border border-neutral-300 h-12 w-12 p-3 rounded-full transition-colors duration-300 ${canScrollPrev ? "cursor-pointer hover:bg-white hover:text-primary" : "text-neutral-400"}`}
           onClick={() => api?.scrollPrev()}
         >
           <HiOutlineArrowLeft className="h-full w-full" />
         </button>
         <button
-          className={`border border-neutral-300 h-12 w-12 p-3 rounded-full ${canScrollNext ? "" : "text-neutral-400"}`}
+          className={`border border-neutral-300 h-12 w-12 p-3 rounded-full transition-colors duration-300 ${canScrollNext ? "cursor-pointer hover:bg-white hover:text-primary" : "text-neutral-400"}`}
           onClick={() => api?.scrollNext()}
         >
           <HiOutlineArrowRight className="h-full w-full" />

@@ -64,11 +64,11 @@ export default function Faq() {
           </div>
           {listAccordion.map((val, index) => {
             return (
-              <CardContent key={val.value} className="px-0">
+              <CardContent key={val.value} className="px-">
                 <Accordion type="single" collapsible>
                   <AccordionItem value={val.value}>
                     <AccordionTrigger
-                      className="font-bold md:text-2xl"
+                      className="font-bold md:text-2xl cursor-pointer"
                       index={index}
                     >
                       {val.trigger}

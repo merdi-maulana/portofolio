@@ -3,21 +3,21 @@ import Image, { StaticImageData } from "next/image";
 import portfolio2 from "@/assets/img/Portfolio2.png";
 import portfolio1 from "@/assets/img/Portfolio1.png";
 import portfolio3 from "@/assets/img/Portfolio3.png";
-import { HiOutlineArrowRight, HiOutlineArrowLeft } from "react-icons/hi2";
+import { HiOutlineArrowRight } from "react-icons/hi2";
 
 const listPortfolio: { id: number; title: string; image: StaticImageData }[] = [
   {
-    id:1,
+    id: 1,
     title: "Portfolio 1",
     image: portfolio1,
   },
   {
-    id:2,
+    id: 2,
     title: "Portfolio 2",
     image: portfolio2,
   },
   {
-    id:3,
+    id: 3,
     title: "Portfolio 3",
     image: portfolio3,
   },
@@ -40,9 +40,15 @@ export default function Portfolio() {
         </div>
 
         <div className="flex w-full md:w-fit h-14 justify-center md:justify-end">
-          <Button className="flex justify-center bg-white w-full md:w-[200px] h-14 rounded-full">
-            <div className="flex items-center justify-between w-full border border-neutral-300 p-3 pl-4 h-14 rounded-full">
-              <p className="text-lg text-black">See All</p>
+          <Button className="cursor-pointer group flex justify-center bg-white w-full md:w-fit md:min-w-[160px] md:hover:min-w-[280px] h-14 rounded-full p-0 transition-all duration-300 hover:bg-primary-300 hover:text-white active:bg-white active:text-black">
+            <div className="flex items-center justify-between w-full border border-neutral-300 p-3 pl-4 h-14 rounded-full hover:bg-primary-300 hover:text-white active:bg-white active:text-black">
+              <p className="cursor-pointer text-lg text-black group-hover:text-white group-active:text-black transition-colors duration-300 whitespace-nowrap">
+                See All{" "}
+                <span className="inline-block max-w-0 overflow-hidden opacity-0 group-hover:max-w-[180px] group-hover:opacity-100 transition-all duration-300 align-bottom">
+                  {" "}
+                  Portofolio
+                </span>
+              </p>
               <div className="bg-black w-10 h-10 rounded-full flex items-center justify-center">
                 <HiOutlineArrowRight className="font-bold" />
               </div>
@@ -54,10 +60,11 @@ export default function Portfolio() {
       <div className="flex flex-col md:flex-row gap-4">
         {listPortfolio.map((portfolio) => {
           return (
-            <div key={portfolio.id} className="">
-              <div
-                className="p-4 bg-neutral-100 rounded-2xl"
-              >
+            <div
+              key={portfolio.id}
+              className="cursor-pointer hover:scale-105 active:scale-100 transition-all duration-300"
+            >
+              <div className="p-4 bg-neutral-100 rounded-2xl">
                 <div className="absolute mt-3 -ml-6 ">
                   <p className="bg-secondary z-20 rounded-r-2xl font-semibold w-25 tracking-tight p-1 text-xs">
                     Best Portofolio
