@@ -3,7 +3,7 @@
 import { ArrowRight } from "lucide-react";
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import heroImage from "@/assets/img/hero-image.png";
+import heroImage from "@/assets/img/profil.png";
 import bgHero from "@/assets/img/bg-hero.png";
 import Reactimg from "@/assets/svg/React_icon.svg";
 import HTMLimg from "@/assets/svg/HTML_icon.svg";
@@ -49,18 +49,6 @@ export function Hero() {
         className="absolute inset-0 h-[105vh] flex flex-col justify-end items-center  px-4"
         style={{ transform: `translateY(${scrollY * 0.3}px)` }}
       >
-        <div
-          className="flex absolute bottom-110 left-1/2 bg-primary-400 border rounded-full px-4 py-1 border-primary-300 -translate-x-1/2 justify-between items-center gap-2 animate-in fade-in slide-in-from-bottom-4 duration-700"
-          style={{
-            animationDelay: "2000ms",
-            animationFillMode: "both",
-          }}
-        >
-          <div className="w-2 h-2 bg-primary-300 rounded-full animate-blink-dot"></div>
-          <p className="text-white font-bold md:text-xl max-w-xl leading-relaxed">
-            Available for Hire
-          </p>
-        </div>
         <h1
           className="absolute bottom-42 md:bottom-100 z-1 font-anton text-[102px] md:text-[187px] text-secondary leading-[0.88] tracking-tight animate-in fade-in slide-in-from-bottom-8 duration-1000"
           style={{ animationDelay: "500ms", animationFillMode: "both" }}
@@ -69,7 +57,7 @@ export function Hero() {
           <span className="text-[92.8px] md:text-[172px]">DEVELOPER</span>
         </h1>
 
-        <div className="absolute z-10 left-1/2 -translate-x-1/2 ml-4 bottom-0 w-[375px] md:w-[610px]">
+        <div className="absolute z-10 left-1/2 -translate-x-1/2 ml-4 md:ml-5 -bottom-15 w-[375px] md:w-[680px]">
           <Image
             src={heroImage}
             alt="Hero Image"
