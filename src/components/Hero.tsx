@@ -178,7 +178,7 @@ export function Hero() {
                 <div className="space-y-6 grid grid-cols-2 md:grid-cols-1 gap-y-4 md:pt-30 md:h-full">
                   <div className="flex flex-col mb-0">
                     <p className="text-[32px] md:text-5xl font-bold text-white">
-                      2+
+                      1+
                     </p>
                     <p className="text-xs md:text-base text-white mt-1">
                       Year Professional Consistency

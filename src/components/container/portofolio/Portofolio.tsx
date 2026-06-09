@@ -1,25 +1,37 @@
 import { Button } from "@/components/ui/button";
 import Image, { StaticImageData } from "next/image";
-import portfolio2 from "@/assets/img/Portfolio2.png";
-import portfolio1 from "@/assets/img/Portfolio1.png";
-import portfolio3 from "@/assets/img/Portfolio3.png";
+import Portofolio2 from "@/assets/img/portofolio2.webp";
+import Portofolio1 from "@/assets/img/portofolio1.webp";
+import Portofolio3 from "@/assets/img/portofolio3.webp";
 import { HiOutlineArrowRight } from "react-icons/hi2";
 
-const listPortfolio: { id: number; title: string; image: StaticImageData }[] = [
+const listPortfolio: {
+  id: number;
+  title: string;
+  subtitle: string;
+  link: string;
+  image: StaticImageData;
+}[] = [
   {
     id: 1,
-    title: "Portfolio 1",
-    image: portfolio1,
+    title: "Real Project (ongoing)",
+    subtitle: "Real Estate",
+    link: "https://bumi-passanggrahan.suksesaselabar.id/",
+    image: Portofolio3,
   },
   {
     id: 2,
-    title: "Portfolio 2",
-    image: portfolio2,
+    title: "Portofolio2",
+    subtitle: "Social Media",
+    link: "https://social-media-project2.vercel.app/feed",
+    image: Portofolio2,
   },
   {
     id: 3,
-    title: "Portfolio 3",
-    image: portfolio3,
+    title: "Portofolio1",
+    subtitle: "Book Library",
+    link: "https://library-book-project1.vercel.app/",
+    image: Portofolio1,
   },
 ];
 
@@ -61,8 +73,9 @@ export default function Portfolio() {
         {listPortfolio.map((portfolio) => {
           return (
             <div
+              onClick={() => window.open(portfolio.link, "_blank")}
               key={portfolio.id}
-              className="cursor-pointer hover:scale-105 active:scale-100 transition-all duration-300"
+              className="cursor-pointer hover:scale-105 md:w-1/3 active:scale-100 transition-all duration-300"
             >
               <div className="p-4 bg-neutral-100 rounded-2xl">
                 <div className="absolute mt-3 -ml-6 ">
@@ -71,7 +84,13 @@ export default function Portfolio() {
                   </p>
                   <div className="w-0 h-0 -mt-0.5 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-b-[8px] border-b-[#855400] rotate-45"></div>
                 </div>
-                <Image alt={portfolio.title} src={portfolio.image} />
+                <div className="w-full md:h-96">
+                  <Image
+                    className="w-full h-full object-cover"
+                    alt={portfolio.title}
+                    src={portfolio.image}
+                  />
+                </div>
               </div>
               <div className="bg-neutral-100 px-2 py-4 rounded-2xl">
                 <p className="font-bold text-lg">{portfolio.title}</p>
@@ -81,7 +100,7 @@ export default function Portfolio() {
                     <HiOutlineArrowRight />
                   </Button>
                 </div>
-                <p className="text-sm md:text-base">Web Development</p>
+                <p className="text-sm md:text-base">{portfolio.subtitle}</p>
               </div>
             </div>
           );

@@ -1,7 +1,7 @@
 import Image from "next/image";
-import portfolio1 from "@/assets/img/Portfolio1.png";
-import portfolio2 from "@/assets/img/Portfolio2.png";
-import portfolio3 from "@/assets/img/Portfolio3.png";
+import portfolio1 from "@/assets/img/portofolio1.webp";
+import portfolio2 from "@/assets/img/portofolio2.webp";
+import portfolio3 from "@/assets/img/portofolio3.webp";
 import heroImage from "@/assets/svg/avatar_contact.svg";
 import { Button } from "@/components/ui/button";
 
@@ -16,7 +16,7 @@ export default function Contact() {
           </h2>
           <p className="text-sm font-medium mt-2 md:text-base">
             Have a project in mind or just want to say hi? Drop me a message —
-            I'd love to hear from you.
+            I&apos;d love to hear from you.
           </p>
         </div>
 
